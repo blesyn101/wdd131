@@ -55,12 +55,13 @@ nav a:hover {
   font-size: 3rem;
   font-weight: 100;
   text-align: center;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   grid-column: 1 / 4; /* span across all three columns */
 }
 .about-resources {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   background-color: #333333;
   color: #f7f7f7;
@@ -110,6 +111,7 @@ hr {
   float: left;
 }
 aside {
+    margin-top: 80px;
   grid-column: 3 / 4;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
