@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+}
+
+/* Mobile view */
+header {
+  background-color: #0076b6;
+  display: grid;
+  gap: 1rem;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: white;
+  text-align: left;
+}
+
+h2 {
+    display: grid;
+    justify-content: center;
+    margin: 15px;
+}
+
+nav {
+  max-width: 700px;
+}
+
+/* Menu */
+#menu {
+  font-size: 2rem;
+  border: 0;
+  font-weight: 700;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#menu ::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.navigation a {
+  display: none;
+  padding: 1rem;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.navigation a:hover {
+  background-color: #6ebde8;
+}
+
+/* When the button is clicked- te open class is toggled (added/removed) */
+.open a {
+  display: block;
+}
+
+/* just a wayfinding symbol for the user */
+.active::after {
+  color: black;
+}
+
+/* Main */
+
+/* footer */
+footer {
+  background-color: #0076b6;
+  display: grid;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+/* Larger Screen */
+@media (min-width: 640px) {
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #menu {
+    display: none; /* hide hamburger button on large screen */
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navigation a{
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  /* main */
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-area: 25px;
+    place-items: center;
+}
+
+figure {
+    background-color: #fff;
+}
+
+figure img{
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+
+}
+
+figcaption {
+    font-size: small;
+}
+
+
+
+}
