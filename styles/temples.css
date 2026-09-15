@@ -18,7 +18,7 @@ header {
 }
 
 h1 {
-  color: white;
+  color: #fff;
   text-align: left;
 }
 
@@ -64,7 +64,7 @@ nav {
   padding: 1rem;
   text-align: left;
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-weight: 700;
 }
 
@@ -115,7 +115,7 @@ figcaption {
 /* footer */
 footer {
   background-color: #0076b6;
-  color: white;
+  color: #fff;
   display: grid;
   padding: 20px;
   margin-top: 20px;
