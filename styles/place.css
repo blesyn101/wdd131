@@ -74,8 +74,9 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.weather-icon-mobile {
+.weather-icon {
   display: block;
+  margin: auto;
   margin-bottom: 0.5rem;
 }
 
