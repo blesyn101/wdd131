@@ -26,6 +26,7 @@ body {
   color: var(--text-color);
   background-color: var(--accent-color);
   line-height: 1.6;
+  font-family: "roboto", sans-serif;
 }
 
 header {
