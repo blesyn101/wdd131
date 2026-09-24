@@ -1,0 +1,153 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+:root {
+  --primary-color:#d92b10 ; /* Green from Madagascar flag */
+  --secondary-color: #007e3a; /* Red from Madagascar flag */
+  --accent-color: #f7f7f7;
+  --text-color: #333333;
+  --card-bg: #ffffff;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--accent-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 1rem 1.25rem;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.25rem;
+  text-align: center;
+}
+
+.card ul {
+  list-style: none;
+  text-align: center;
+}
+
+.card li {
+  margin-bottom: 0.5rem;
+}
+
+.weather-icon-mobile {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ----------------------------------
+   Wider Views (Desktops / Tablets)
+------------------------------------- */
+@media (min-width: 650px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        align-items: start;
+        padding: 0;
+    }
+
+    .hero {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+
+  .data-card {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    margin: 1.5rem;
+    margin-top: 3rem;
+  }
+  
+  .weather-card {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    margin: 1.5rem;
+    margin-top:15rem;
+  }
+
+  .data-card h2 {
+    background-color: #007e3a;
+    color: #f7f7f7;
+    position: relative;
+    right: 2rem;
+  }
+
+  .weather-card h2 {
+    background-color: #007e3a;
+    color: #f7f7f7;
+    position: relative;
+    right: 2rem;
+  }
+
+  /* Hide mobile SVG icon in wider screens */
+  .weather-icon {
+    display: none;
+  }
+
+/* Display emoji pseudo-element on wide screens */
+  .weather-card h2::after {
+    content: " ⛅";
+  }
+}

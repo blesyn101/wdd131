@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Agharese Iyonawan Blessing" >
+    <meta name="description" content="This is a place and part of week 3 Assignment">
+    <title>Place Page - Madagascar</title>
+    <!-- svg -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=partly_cloudy_day" />
+    <!-- css -->
+    <link rel="stylesheet" href="styles/place.css" >
+    <!-- js -->
+    <script src="scripts/place.js" defer ></script>
+</head>
+<body>
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+
+    <main>
+        <!-- Hero Image section using WebP and Responsive Markup -->
+         <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 600px)">
+                <img src="images/hero-small.webp" alt="Madagascar" width="200" height="400">
+            </picture>
+         </div>
+
+         <!-- Country info section -->
+          <section class="card data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 587,041 km²</li>
+                <li><strong>Population:</strong> ~28,000,000</li>
+                <li><strong>Capital:</strong> Antananarivo</li>
+                <li><strong>Languages:</strong> Malagasy, French</li>
+                <li><strong>Currency:</strong> Malagasy Ariary (MGA)</li>
+                <li><strong>Time Zone:</strong> UTC+3</li>
+                <li><strong>Calling Code:</strong> +261</li>
+                <li><strong>Internet TLD:</strong> .mg</li>
+            </ul>
+          </section>
+
+          <!-- Weather Section -->
+           <section class="card weather-card">
+            <h2>Weather</h2>
+            <!-- Mobile Weather Icon -->
+            <img class="weather-icon" src="images/partly-cloud.svg" alt="Weather condition icon" width="48" height="48">
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temp">10</span>°C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind Speed:</strong> <span id="wind">5</span> km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="chill">N/A</span></li>
+            </ul>
+           </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ❤️ Agharese Blessing Iyonawan ❤️ Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
