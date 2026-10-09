@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="author" content="Agharese Blessing Iyonawan">
+    <meta name="description" content="This is a form for submitting course proposals.">
+
+    <link rel="stylesheet" href="styles/form-small.css">
+
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html" class="wf1">
+            <!-- Product Name -->
+            <fieldset>
+                <div> Product Name</div>
+                <select id="select" name="productName" required>
+                    <option value="" disabled selected>Select a Product ... &#9662;</option>
+                </select>  
+            </fieldset>
+
+            <fieldset>
+                <legend>Product Rating</legend>
+                <div>Rating</div>
+                <label><input type="radio" id="rate1" value="1" name="rate" required>&star;</label>
+                <label><input type="radio" id="rate2" value="2" name="rate" required>&star; &star;</label>
+                <label><input type="radio" id="rate3" value="3" name="rate" required>&star; &star; &star;</label>
+                <label><input type="radio" id="rate4" value="4" name="rate" required>&star; &star; &star; &star;</label>
+                <label><input type="radio" id="rate5" value="5" name="rate" required>&star; &star; &star; &star; &star;</label>
+
+            </fieldset>
+            
+            <fieldset>
+                <label>Installation Date<input type="date" id="installDate" name="installDate" required></label>
+            </fieldset>
+            
+            <fieldset>
+                <p>Which features did you find useful in the product?</p>
+                <em>Check all that apply</em>
+                <label><input type="checkbox" id="durability" name="Durability" value="yes"> Durability</label>
+                <label><input type="checkbox" id="easeOfUse" name="Ease of Use" value="yes"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="Performance" value="yes"> Performance</label>
+                <label><input type="checkbox" id="design" name="Design" value="yes"> Design</label>
+            </fieldset>
+            
+            <fieldset>
+                <p>Written Review <span>(optional)</span></p>
+                <textarea name="review" id="writtenReview"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label>Your Name<input type="text" id="yourName" name="YourName"></label>
+            </fieldset>
+            
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span>❤️Agharese Iyonawan Blessing.❤️ Nigeria.</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+</body>
+</html>

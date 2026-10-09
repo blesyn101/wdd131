@@ -1,0 +1,196 @@
+
+/* ---------- GENERAL STYLES ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #183153;
+    background-color: #EFF6FF;
+}
+
+/*  MAIN CONTENT  */
+
+main {
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    margin: 0 0 1.5rem;
+    color: #123B66;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+/*  FORM  */
+
+.wf1 {
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    border: 1px solid #D5E3F3;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(18, 59, 102, 0.08);
+}
+
+.wf1 fieldset {
+    min-width: 0;
+    margin: 0 0 1.5rem;
+    padding: 1rem;
+    border: 1px solid #B8D4F2;
+    border-radius: 8px;
+}
+
+.wf1 legend {
+    padding: 0 0.5rem;
+    color: #123B66;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+.wf1 label {
+    display: block;
+    margin-top: 0.8rem;
+    color: #183153;
+    font-size: 0.95rem;
+}
+
+.wf1 p {
+    margin: 0.3rem 0;
+    font-weight: bold;
+    color: #123B66;
+}
+
+.wf1 em,
+.wf1 span {
+    color: #526780;
+    font-size: 0.85rem;
+}
+
+/*  TEXT, DATE AND SELECT INPUTS  */
+
+.wf1 input[type="text"],
+.wf1 input[type="date"],
+.wf1 select,
+.wf1 textarea {
+    display: block;
+    width: 100%;
+    margin-top: 0.4rem;
+    padding: 0.8rem;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #183153;
+    background-color: #F4F8FF;
+    border: 1px solid #9BB9DC;
+    border-radius: 6px;
+}
+
+.wf1 select {
+    cursor: pointer;
+}
+
+.wf1 textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+/*  RADIO BUTTONS AND CHECKBOXES  */
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 0.5rem;
+    accent-color: #2563EB;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/*  FOCUS AND ACCESSIBILITY  */
+
+.wf1 input:focus-visible,
+.wf1 select:focus-visible,
+.wf1 textarea:focus-visible {
+    outline: 3px solid #60A5FA;
+    outline-offset: 2px;
+}
+
+.wf1 input[type="radio"]:focus-visible,
+.wf1 input[type="checkbox"]:focus-visible {
+    outline: 2px solid #2563EB;
+    outline-offset: 3px;
+}
+
+/*  SUBMIT BUTTON  */
+
+.wf1 input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.9rem 1rem;
+    color: #FFFFFF;
+    background-color: #2563EB;
+    border: none;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 1.05rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.wf1 input[type="submit"]:hover {
+    background-color: #123B66;
+}
+
+.wf1 input[type="submit"]:focus-visible {
+    outline: 3px solid #60A5FA;
+    outline-offset: 3px;
+}
+
+/*  FOOTER  */
+
+footer {
+    padding: 1.2rem 1rem;
+    color: #FFFFFF;
+    background-color: #123B66;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+/*  LARGER SCREENS  */
+
+@media screen and (min-width: 600px) {
+    main {
+        margin: 3rem auto;
+        padding: 0 1.5rem;
+    }
+
+    .wf1 {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .wf1 fieldset {
+        padding: 1.2rem;
+    }
+}
