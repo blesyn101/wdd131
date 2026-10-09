@@ -37,16 +37,12 @@ const products = [
 // Populate the product dropdown
 const productSelect = document.querySelector("#select");
 
-if (productSelect) {
-  products.forEach((product) => {
-    const option = document.createElement("option");
-
-    option.value = product.id;
-    option.textContent = product.name;
-
-    productSelect.appendChild(option);
-  });
-}
+products.forEach(function (product) {
+  let option = document.createElement("option");
+  option.value = product.id;
+  option.textContent = product.name;
+  productSelect.appendChild(option);
+});
 
 // Count completed reviews on the confirmation page
 const reviewCountElement = document.querySelector("#reviewCount");
