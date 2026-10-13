@@ -273,6 +273,10 @@ footer {
 footer a {
     color: var(--accent-color);
 }
+.socials img {
+    height: 40px;
+    width: 40px;
+}
 
 
 /* Larger screens */

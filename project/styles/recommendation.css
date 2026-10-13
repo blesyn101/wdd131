@@ -1,0 +1,121 @@
+/* Recommendation form */
+.form-intro {
+    padding: 3rem 1.5rem .5rem;
+    text-align: center;
+}
+
+.form-intro h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.form-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.recommendation-form {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.recommendation-form h2 {
+    text-align: center;
+}
+
+.wf1 fieldset {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.wf1 legend {
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+.wf1 label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.wf1 input[type="text"],
+.wf1 select,
+.wf1 textarea {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.4rem;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.wf1 input:focus,
+.wf1 select:focus,
+.wf1 textarea:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.wf1 input[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wf1 input[type="submit"]:hover {
+    background-color: #2E6848;
+}
+
+#form-message {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.saved-recommendations {
+    padding: 2rem 1.5rem;
+}
+
+.recommendation-item {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.recommendation-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Form on larger screens */
+@media (min-width: 640px) {
+    .recommendation-form {
+        max-width: 700px;
+        margin: 2rem auto;
+        padding: 2rem;
+    }
+
+    .form-intro,
+    .saved-recommendations {
+        padding: 3rem 5% .5rem; 
+    }
+
+    .saved-recommendations {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}

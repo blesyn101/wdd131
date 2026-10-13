@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recommend a destination in Nigeria for Naija Trails to explore and share." >
+    <meta name="author" content="Agharese Blessing Iyonawan">
+    <title>Recommend a Destination</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/recommendation.css">
+    <!-- Scripts -->
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/recommendation.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><span>Naija</span> Trails</a>
+    
+        <button type="button" id="menu" aria-label="navigation menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="home" class="active">Home</a></li>
+                <li><a href="destinations.html" title="Destinations">Destinations</a></li>
+                <li><a href="recommend.html" title="Recommend a Place">Recommend a Place</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-intro">
+            <h1>Share a Place Worth Discovering</h1>
+            <p>Know a beautiful destination in Nigeria? Tell us about it and help other travellers discover somewhere new</p>
+        </section>
+
+        <section class="recommendation-form">
+            <h2>Recommend a Destination</h2>
+
+            <form method="get" action="recommend.html" id="recommendation-form" class="wf1">
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <label for="visitor-name">Your Name</label>
+                    <input type="text" id="visitor-name" autocomplete="name" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Destination Information</legend>
+
+                    <label for="place-name">Destination Name</label>
+                    <input type="text" id="place-name" name="placeName" required>
+
+                    <label for="place-state">State</label>
+                    <input type="text" id="place-state" name="placeState" required>
+
+                    <label for="place-category">Destination Category</label>
+                    <select id="place-category" name="placeCategory" required>
+                        <option value="" disabled selected>Select a category...</option>
+                        <option value="Historical">Histoical Site</option>
+                        <option value="Nature">Nature and Wildlife</option>
+                        <option value="Culture">Cultural Attraction</option>
+                        <option value="Recreation">Recreation and Leisure</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>About This Destination</legend>
+
+                    <label for="place-description">Why should people visit this place?</label>
+                    <textarea id="place-description" name="placeDescription" rows="5" required></textarea>
+                </fieldset>
+
+                <input type="submit" value="Give Recommendation">
+                <p id="form-message" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="saved-recommendatios">
+            <h2>Community Recommendations</h2>
+            <p>Discover Places shares by our visitors.</p>
+
+            <div id="recommendation-list">
+                <p>No recommendation have been submitted yet.</p>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Naija Trails.</p>
+        <div class="socials">
+            <a href="https://www.facebook.com/profile.php?id=100084128108283"><img src="images/facebook-icon-logo-svgrepo-com.svg" alt=""></a>
+            <a href="https://www.instagram.com/blessingagharese_/"><img src="images/instagram-1-svgrepo-com.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/blessing-agharese/"><img src="images/linkedin-svgrepo-com.svg" alt=""></a>
+          </div>
+        <a href="references.html">References</a>
+    </footer>
+    
+</body>
+</html>

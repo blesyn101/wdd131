@@ -61,6 +61,7 @@ const currentyear = document.querySelector("#currentyear");
 const today = new Date();
 currentyear.innerHTML = today.getFullYear();
 
+
 // Run the page functions
 displayDestinations();
 displayYear();
