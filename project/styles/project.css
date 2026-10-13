@@ -124,7 +124,7 @@ main {
 
 /* Home Page Hero Section */
 .hero {
-    background: linear-gradient( rgba(15, 45, 29, 0.75), rgba(15, 45, 29, 0.75) ), url('../images/blessinga.png');
+    background: linear-gradient( rgba(15, 45, 29, 0.75), rgba(15, 45, 29, 0.75) ), url('../images/benin-city.png');
     background-size: cover;
     background-position: cover;
     color: var(--card-bg-color);
