@@ -57,4 +57,6 @@ currentyear.innerHTML = today.getFullYear();
 
 // call the page functions
 displayDestinations();
-displayYear();
+
+// God help me
+
