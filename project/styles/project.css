@@ -202,7 +202,7 @@ main {
 }
 
 .destination-card {
-    background-color: var(--card-bg);
+    background-color: var(--card-bg-color);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -248,7 +248,7 @@ main {
 
 /* Community section */
 .community {
-    background-color: var(--card-bg);
+    background-color: var(--card-bg-color);
     padding: 3rem 1.5rem;
     text-align: center;
 }
